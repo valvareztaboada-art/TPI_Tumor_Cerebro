@@ -26,11 +26,12 @@ streamlit run app.py
 La carpeta `archive_prep/` contiene las 65 imágenes seleccionadas del 
 Brain Tumor MRI Dataset (Kaggle), filtradas según los criterios del informe 
 (plano axial, tumores hiperintensos; clases meningioma, glioma y sin tumor).
-Las carpetas `archive_prep_proc/`, `archive_mascaras/` y `resultados/` se 
-generan automáticamente al correr los scripts en orden (01 a 05).
 
 ## Dataset
-Brain Tumor MRI Dataset (Kaggle). No incluido en el repositorio por tamaño.
+Brain Tumor MRI Dataset (Kaggle):
+https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+Las 65 imágenes utilizadas (incluidas en `archive_prep/`) son una selección 
+propia de ese dataset según los criterios descritos en el informe.
 
 ## Integrantes
 Alvarez Taboada, Gowland, Losinno
