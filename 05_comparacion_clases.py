@@ -32,9 +32,9 @@ from skimage.feature import graycomatrix, graycoprops
 import warnings
 warnings.filterwarnings("ignore")
 
-RAW_BASE   = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_prep")
-MASK_BASE  = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_mascaras")
-OUT_DIR    = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\resultados")
+RAW_BASE   = Path(__file__).parent / "archive_prep"
+MASK_BASE  = Path(__file__).parent / "archive_mascaras"
+OUT_DIR    = Path(__file__).parent / "resultados"
 OUT_DIR.mkdir(exist_ok=True)
 
 TARGET_SIZE = (224, 224)

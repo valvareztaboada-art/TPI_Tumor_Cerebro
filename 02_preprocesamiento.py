@@ -21,9 +21,9 @@ import SimpleITK as sitk
 import warnings
 warnings.filterwarnings("ignore")
 
-BASE      = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_prep")
-OUT_BASE  = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_prep_proc")
-OUT_DIR   = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\resultados")
+BASE      = Path(__file__).parent / "archive_prep"
+OUT_BASE  = Path(__file__).parent / "archive_prep_proc"
+OUT_DIR   = Path(__file__).parent / "resultados"
 OUT_DIR.mkdir(exist_ok=True)
 
 CLASSES     = ["notumor_prep", "meningioma_prep", "glioma_prep"]

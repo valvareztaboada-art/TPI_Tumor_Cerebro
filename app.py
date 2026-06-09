@@ -23,7 +23,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # -- Rutas --------------------------------------------------------------------
-BASE          = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores")
+BASE          = Path(__file__).parent
 PROC_BASE     = BASE / "archive_prep_proc"
 RAW_BASE      = BASE / "archive_prep"
 RESULTADOS    = BASE / "resultados"

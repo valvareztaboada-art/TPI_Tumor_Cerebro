@@ -18,8 +18,8 @@ from pathlib import Path
 from PIL import Image
 
 
-BASE    = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_prep")
-OUT_DIR = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\resultados")
+BASE    = Path(__file__).parent / "archive_prep"
+OUT_DIR = Path(__file__).parent / "resultados"
 OUT_DIR.mkdir(exist_ok=True)
 
 CLASSES = {

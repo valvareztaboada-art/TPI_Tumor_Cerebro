@@ -33,9 +33,9 @@ from sklearn.cluster import KMeans
 import warnings
 warnings.filterwarnings("ignore")
 
-PROC_BASE  = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_prep_proc")
-OUT_DIR    = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\resultados")
-MASK_BASE  = Path(r"C:\Users\pauli\Downloads\TP imagenes tumores\archive_mascaras")
+PROC_BASE  = Path(__file__).parent / "archive_prep_proc"
+OUT_DIR    = Path(__file__).parent / "resultados"
+MASK_BASE  = Path(__file__).parent / "archive_mascaras"
 OUT_DIR.mkdir(exist_ok=True)
 
 AR_MIN, AR_MAX = 0.005, 0.60
