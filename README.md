@@ -21,6 +21,7 @@ Correr los scripts en orden (01 a 05). La aplicación se ejecuta con:
 \`\`\`
 streamlit run app.py
 \`\`\`
+En caso de no funcionar se puede hacer doble click en el archivo lanzador y se abrirá en una ventana la interfaz.
 
 ## Datos
 La carpeta `archive_prep/` contiene las 65 imágenes seleccionadas del 
